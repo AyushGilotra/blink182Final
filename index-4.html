@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link href="https://fonts.googleapis.com/css?family=New+Rocker|Roboto" rel="stylesheet"> 
+  <style>
+    h1 {
+      font-family: "New Rocker", cursive;
+      background: linear-gradient(#2a2a2a,#c0c8c2);
+      font-size: 50px;
+      width: 350px;
+    }
+    button {
+      background-color: #202020;
+      border: 1px solid #4b4b4b; 
+      color: white; 
+      cursor: pointer; 
+      width: 100px;
+      height: 2em;
+      font-size: 12pt;
+    }
+    button:not {
+      border-right: none; 
+    }
+
+    button:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    button:hover {
+      background-color: #333333;
+      box-shadow: 0 12px 16px 0 #515151, 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  </style>
+  <head>
+    <title>JavaScript Simple Login System</title>
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <center><h1>Login Form</h1></center>
+  <body>
+    <form>
+      <center><p><input type="text" id="username" placeholder="Choose Username" class="input1" style="font-size:12pt;height:2em;width:350px;"></p></center>
+      <center><p><input type="password" id="password" placeholder="Choose Password" style="font-size:12pt;height:2em;width:350px;"></p></center>
+    </form>
+      <center><button onclick="getInfo()">Submit</button></center>
+    <script src="script.js"></script>
+  </body>
+</html>
