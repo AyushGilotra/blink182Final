@@ -30,6 +30,6 @@ function getInfo() {
   console.log("incorrect username or password")
 }
 function homePage() {
-  window.location.replace("index.html");
+  window.location.replace("index-5.html");
   return
 }
