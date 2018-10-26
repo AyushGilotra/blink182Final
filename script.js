@@ -22,7 +22,7 @@ function getInfo() {
     // check if user input matches username and password of a current index of the objPeople array
     if(username == objPeople[i].username && password == objPeople[i].password) {
       window.location.replace("index-5.html");
-      //console.log(username + " is logged in!!!");
+      console.log(username + " is logged in!!!");
       // stop the function if this is found to be true
       return
     }
