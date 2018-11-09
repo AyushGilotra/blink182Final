@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <link href="https://fonts.googleapis.com/css?family=New+Rocker|Roboto" rel="stylesheet"> 
+  <style>
+    h1 {
+      font-family: "New Rocker", cursive;
+      font-size: 50px;
+      background: linear-gradient(#2a2a2a,#c0c8c2);
+      width: 350px;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+    }
+    button {
+      background-color: #202020;
+      border: 1px solid #4b4b4b; 
+      color: white; 
+      cursor: pointer; 
+      width: 100px;
+      height: 2em;
+      font-size: 12pt;
+    }
+    button:not {
+      border-right: none; 
+    }
+
+    button:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    button:hover {
+      background-color: #333333;
+      box-shadow: 0 12px 16px 0 #515151, 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  </style>
+  <title>You Voted!</title>
+  <center><h1>You Voted!</h1></center>
+  <center><img src="voted.jpg"></center>
+  <center><p>Click this button to go back to the home screen.</p></center>
+  <center><a href="index.html"><button>Go Home!</button></a></center>
+</html>
