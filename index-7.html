@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link href="https://fonts.googleapis.com/css?family=New+Rocker|Roboto" rel="stylesheet"> 
+  <style>
+    h1 {
+      font-family: "New Rocker", cursive;
+      background: linear-gradient(#2a2a2a,#c0c8c2);
+      font-size: 50px;
+      width: 350px;
+    }
+    button {
+      background-color: #202020;
+      border: 1px solid #4b4b4b; 
+      color: white; 
+      cursor: pointer; 
+      width: 102px;
+      height: 30px;
+      font-size: 12pt;
+      font-family: "Roboto", sans-serif;
+    }
+    button:not {
+      border-right: none; 
+    }
+
+    button:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    button:hover {
+      background-color: #333333;
+      box-shadow: 0 12px 16px 0 #515151, 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  </style>
+  <center><a href="index.html"><button>Home Page</button></a></center>
+<title>Fun Facts</title>
+  <center><h1>Fun Facts</h1></center>
+  <center><button id="whatever" onclick="generator();">Click Here!</button></center>
+  <center><p id="funFact"></p></center>
+  <script>
+  function generator () {
+    var funFact = ["The original trio of Tom DeLonge, Mark Hoppus, and Scott Raynor went by the names Duck Tape and Figure 8 before finally settling on Blink.","Their original band name was Blink, but an Irish band with the same name threatened them with a lawsuit. Perhaps Blink-1 through Blink-181 were taken?","Once, while trying to impress Tom DeLonge, Mark Hoppus fell from a lamppost and cracked his ankles, an injury that put him in crutches for three weeks.","Mark Hoppus’ girlfriend was angry about how much time he was spending with the band and made him choose between the band or her. He left the band for a short time, but when he heard they were recording a demo tape, he broke up with his girlfriend and came back, which, history has shown, was probably the right move.","Blink-182 founder Tom DeLonge is a strong believer in alien life as evidenced by the song “Aliens Exist” which, as titles go, is pretty on-the-nose.","In their early days, DeLonge would call up local high schools and try to convince them that Blink was a “motivational band with a strong antidrug message” in hopes of scoring a gig during an assembly or lunch.","Blink-182’s original drummer, Scott Raynor, was fired in the middle of a 1998 tour because of his alcohol abuse. Okay. Rock stars drink a lot and stereotypes exist for a reason.","Filling in on the tour from which Raynor was just fired, Travis Barker learned the entire 20-song setlist in 45 minutes before the first show. This means that Barker is either a gifted drummer or Blink-182 songs are really not that difficult.", "Before joining the Aquabats, Travis Barker was a garbage man. So he was still playing with drums. Except the drums were full of garbage.", "The distinctive riff from the song “Dammit” was the result of two missing strings on Mark Hoppus’ guitar. If only he’d lost two more strings, the riff might have been twice as good.", "The video for “All the Small Things” was filmed on the same beach as One Direction’s “What Makes You Beautiful.” We think a Blink-182/One Direction crossover album entitled “What Makes You Beautiful are All the Small Things” is definitely called for.", "The song “Emo” was a tribute to one of DeLonge’s favorite bands, Jimmy Eat World.", "The nurse on the cover of Enema of the State was none other than porn star Janine Lindemulder.", "Alternative titles for Enema of the State included “Turn Your Head and Cough,” “Viking Wizard Eyes,” and “Blink-182: Electric Boogaloo.” We're glad they decided to stick wtih Enema of the State, ", "The band had a cameo appearance in the film American Pie. Not in an actual American Pie. That was all Jason Biggs.", "Mark Hoppus was one of Tom DeLonge’s groomsmen at his 2001 wedding. He gave each of his groomsmen a silver yo-yo from Tiffany & Co. This begs the question: Why is Tiffany selling yo-yos?!", "In 2003, the band performed for the troops in the Persian Gulf and said they got the luxury experience. “We ate macaroni and mayonnaise. The troops said, ‘We never get food like this.’” Macaroni and mayonnaise is a luxury?! We really need to do a better job of supporting our troops.", "Travis Barker starred in a reality TV series called Meet the Barkers with his then-wife, former Miss USA Shanna Moakler, who’s ex-boyfriend is famed boxer Oscar de la Hoya.", "For three years after the breakup, the band members did not speak to each other at all.", "On September 19th, 2008, Travis Barker and his friend Adam Goldstein, were the sole survivors of a plane crash that killed four other people. Barker sustained second and third degree burns, developed PTSD, and required sixteen surgeries.", "Blink-182 appeared for the first time on stage together in nearly five years as presenters at the 2009 Grammy Awards.", "Because of the band’s first split, each of the members had his own attorney, and during recording sessions for their new album Neighborhoods, the band had four managers. This resulted in quite a bit of frustration with DeLonge referring to the attorneys, managers, and publicists as “the absolute diarrhea of bureaucracy.” Eloquent.", "DeLonge abruptly quit the band again in 2014 but came back a day later suggesting that the band undergo group therapy with motivational speaker Tony Robbins. If we only had a penny for every time we’ve heard that one.", "With Matt Skiba taking the place of Tom DeLonge, Blink-182’s latest album, California, became the band’s second number-one album on the Billboard 200 and their first in 15 years.", "The band has cited The Cure, Descendents, Bad Religion, Screeching Weasel, All, Face to Face, Down by Law, Pennywise, Green Day, The Vandals, Operation Ivy, the Ramones, Refused, and Fugazi as influences. Us too.", "Bands that cite Blink-182 as an influence include Good Charlotte, 5 Seconds of Summer, Fall Out Boy, Avril Lavigne, and Mumford & Sons. Us too."]
+    var randomItem = funFact[Math.floor(Math.random()*funFact.length)];
+    document.getElementById('funFact').innerHTML= randomItem;
+  }
+  </script>
+</html>
